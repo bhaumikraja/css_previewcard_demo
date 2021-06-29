@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.background__body {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+}
+
+.background__main-card {
+  background-color: hsl(244, 38%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1099px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 1%;
+  height: 446px;
+}
+
+.card {
+  flex: 1;
+}
+
+.left__card {
+  font-size: 30px;
+  width: 300px;
+  text-align: left;
+  padding: 30px;
+}
+.right__card {
+  /* width: 300px;
+  background-color: blue;
+  border-right: 1px solid white;
+  text-align: center;
+  padding: 30px;
+  position: relative; */
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(277, 95%, 30%, 0.589),
+      hsla(277, 95%, 30%, 0.562)
+    ),
+    url(./images/image-header-desktop.jpg);
+  background-size: cover;
+}
+
+/* .right__card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 440px;
+} */
+
+.heading__left-card {
+  padding: 30px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.mini__text {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 3px 30px 20px 30px;
+  margin-top: 12px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+
+.highlight_text {
+  color: hsl(277, 64%, 61%);
+}
+
+.box_stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 10px;
+  padding: 40px 0 40px 0;
+}
+
+.stats_card {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 22px;
+}
+
+.stats_words {
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.data__card-1 {
+  margin-left: 0;
+}
+
+/*Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .background__body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background__main-card {
+    max-width: 90%;
+    max-height: 100%;
+  }
+
+  .left__card {
+    font-size: 20px;
+    width: 300px;
+    padding: 20px;
+  }
+
+  .heading__left-card {
+    padding: 14px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+
+  .mini__text {
+    font-weight: 400;
+    font-size: 11px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 3px 34px 16px 22px;
+    margin-top: 60px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+  }
+
+  .right__card {
+    /* width: 300px;
+    background-color: blue;
+    border-right: 1px solid white;
+    text-align: center;
+    padding: 30px;
+    position: relative; */
+    background-image: linear-gradient(
+        to right bottom,
+        hsla(277, 95%, 30%, 0.589),
+        hsla(277, 95%, 30%, 0.562)
+      ),
+      url(./images/image-header-tab.jpg);
+    background-size: cover;
+  }
+
+  .stats_card {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+  }
+
+  .stats_words {
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+}
+
+/*Responsive - MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .display__desktop {
+    display: none;
+  }
+
+  .background__main-card-mobile {
+    background-color: #eee;
+    width: 425px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 360px 420px; /*for making two rows in grid    */
+    grid-gap: 0;
+    overflow: hidden;
+  }
+
+  .right__card-mobile {
+    background-image: linear-gradient(
+        to right bottom,
+        hsla(277, 95%, 30%, 0.589),
+        hsla(277, 95%, 30%, 0.562)
+      ),
+      url(./images/image-header-mobile.jpg);
+    background-size: cover;
+  }
+
+  .left__card-mobile {
+    background-color: hsl(244, 38%, 16%);
+  }
+
+  .heading__left-card-mobile {
+    padding: 26px;
+    font-size: 28px;
+    font-weight: 700;
+    /* margin-top: 40px; */
+    text-align: center;
+    color: #eee;
+  }
+
+  .mini__text-mobile {
+    font-weight: 400;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.55);
+    padding: 3px 34px 16px 22px;
+    text-align: center;
+  }
+
+  .box__stats-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+  }
+
+  .stats_card-mobile {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .stats_words-mobile {
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+}
